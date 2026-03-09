@@ -1,0 +1,53 @@
+.product{
+Margin: 80px auto;
+width: 90%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.products img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.products{
+    flex-basis: 31%;
+    position: relative;
+}
+
+.caption{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(140, 137, 137, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    font-size: large;
+    padding-top: 70%;
+    transition: 0.4s;
+    
+}
+
+.products:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+}
+
+@media (max-width: 850px){
+    .product{
+        flex-direction: column;
+    }
+    .products{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+}

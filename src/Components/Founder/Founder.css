@@ -1,0 +1,52 @@
+.founder{
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+} 
+
+ .founder-left{
+    flex-basis: 40%;
+    position: relative;
+}
+
+.founder-text{
+    flex-basis: 56%;
+}
+
+.founder-img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.founder-text h2{
+    color: #318253;
+    max-width: 400px;
+}
+
+.founder-text h4{
+    color: #413b3b;
+    margin: 10px 0;
+}
+
+.founder-text p{
+    color: #676767;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 800px){
+    .founder{
+        flex-direction: column;
+    }
+    .founder-left{
+        flex-basis: 100%;
+        margin: 20px;
+        order: 2;
+    }
+    .founder-text{
+        flex-basis: 100%;
+    }
+}
+
+
